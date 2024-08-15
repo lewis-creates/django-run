@@ -29,6 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-lewiscreates-djangorun-wfsnf06xd97.ws.codeinstitute-ide.net']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-lewiscreates-djangorun-wfsnf06xd97.ws.codeinstitute-ide.net',
+]
+
 
 # Application definition
 
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'todo'
 ]
 
 MIDDLEWARE = [
